@@ -1,0 +1,381 @@
+    1  sudo apt install build-essential dkms liux-headers-$(uname -r)
+    2  sudo apt-get update
+    3  sudo apt-get upgrade
+    4  sudo apt-get dist-upgrade
+    5  reboot
+    6  sudo apt-get install linux-headers-$(uname -r)
+    7  sudo apt install build-essential dkms linux-headers-$(uname -r)
+    8  git
+    9  git status
+   10  sudo apt install git
+   11  mkdir repo
+   12  cd repo
+   13  ls
+   14  ls -la
+   15  git init
+   16  ls -la
+   17  touch file.txt
+   18  ls
+   19  ls -la
+   20  rm -rf .git
+   21  ls -la
+   22  ls
+   23  cd ..
+   24  ls
+   25  rm -rf repo
+   26  ls
+   27  mkdir ws
+   28  cd ws
+   29  mkdir git-test
+   30  ls
+   31  cd git-test/
+   32  git init
+   33  cd ..
+   34  git clone https://github.com/Rajzell/git-test.git
+   35  rm -rf git-test
+   36  git clone https://github.com/Rajzell/git-test.git
+   37  man git
+   38  git help
+   39  git status
+   40  git clone https://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@github.com/Rajzell/git-test.git
+   41  cd git-test/
+   42  ls -la
+   43  git status
+   44  echo Hello >> text
+   45  ls
+   46  git status
+   47  git config -l
+   48  git add text 
+   49  git status
+   50  git commit -m"Created a dummy file called 'text'"
+   51  git config --global user.email "janicki.rm@gmail.com"
+   52  git config --global user.name "Rajzell"
+   53  git commit -m"Created a dummy file called 'text'"
+   54  git status
+   55  git log
+   56  git status
+   57  git branch --unset-upstream
+   58  git status
+   59  git log
+   60  ls
+   61  git config
+   62  git config -l
+   63  echo Test value>>NewFile
+   64  git status
+   65  git add NewFile 
+   66  git status
+   67  git commit -m"Added new file called NewFile"
+   68  git status
+   69  git push
+   70  git push --set-upstream origin master
+   71  git log
+   72  git show
+   73  ls
+   74  cd ws
+   75  ls
+   76  mkdir git-majonez
+   77  cd git-
+   78  cd git-majonez/
+   79  git init
+   80  cd ..
+   81  cd git-majonez/
+   82  echo "#include <iostream> int main() { put(\"Goodbye World'"); }" > main.cpp
+   83  echo "#include <iostream> int main() { put(\"Goodbye World\"); }" > main.cpp
+   84  cat main.cpp 
+   85  git status
+   86  git add *
+   87  git status
+   88  git commit -am"Initial commit"
+   89  rm -rf ".git"
+   90  ls
+   91  rm main.cpp 
+   92  ls
+   93  git init
+   94  echo "#include <iostream> int main() { put(\"Goodbye World\"); }" > main.cpp
+   95  git add *
+   96  git commit -am"Initial commit"
+   97  git status
+   98  echo "#include <iostream> int main() { put(\"Hello World\"); }" > main.cpp
+   99  git commit -am"Farewell changed"
+  100  git log
+  101  gitk
+  102  sudo apt install gitk
+  103  apt-get update
+  104  sudo apt-get update
+  105  sudo apt install gitk
+  106  git remote add origin https://github.com/Rajzell/git-majonez.git
+  107  git branch -M main
+  108  git status
+  109  git log
+  110  git push -u origin main
+  111  git config --global credential.helper store
+  112  git pull
+  113  sudo nano ~/.gitconfig
+  114  git push -u origin main
+  115  rm -rf ".git"
+  116  git init
+  117  echo "#include <iostream> int main() { put(\"Goodbye World\"); }" > main.cpp
+  118  git add *
+  119  git commit -am"Initial commit"
+  120  echo "#include <iostream> int main() { put(\"Hello World\"); }" > main.cpp
+  121  git commit -am"Farewall changed"
+  122  git log
+  123  git remote add origin https://github.com/Rajzell/git-majonez.git
+  124  git push -u origin main
+  125  git push -u origin master
+  126  git checkout -b cs
+  127  git branch
+  128  git branch -a
+  129  gitk
+  130  git log
+  131  git reset 5e6b51e7ea4b0e2517e0c4110d1c6e993445f677 --hard
+  132  git log
+  133  git reset 5e6b51e7ea4b0e2517e0c4110d1c6e993445f677
+  134  git log
+  135  git reset HEAD~1 --hard
+  136  git log
+  137  gitk
+  138  echo "#include <iostream> int main() { put(\"Hello Coders School\"); }" > main.cpp
+  139  git commit -am"Greetings"
+  140  git push origin cs
+  141  git status
+  142  git log
+  143  git checkout master
+  144  git log
+  145  git status
+  146  git merge origin/cs
+  147  git mergetool -t meld
+  148  sudo apt-get meld
+  149  sudo apt-install meld
+  150  sudo apt-get meld
+  151  sudo apt-get install meld
+  152  git mergetool -t meld
+  153  git commit -am"merge branch cs"
+  154  git status
+  155  git clean -f
+  156  gitk
+  157  git log
+  158  git commit --amend
+  159  sudo update-alternatives --config editor
+  160  sudo apt-get install vim
+  161  sudo update-alternatives --config editor
+  162  git commit --amend
+  163  sudo update-alternatives --config editor
+  164  git commit --amend
+  165  git status
+  166  git log
+  167  git push origin master
+  168  gitk
+  169  cat history > history.txt
+  170  history > history.txt
+  171  cat history.txt 
+  172  less history.txt 
+  173  git add*
+  174  git add *
+  175  git commit -am"History added"
+  176  git status
+  177  git log
+  178  git push origin master
+  179  gitk
+  180  rm -rf ".git"
+  181  ls
+  182  rm main.cpp 
+  183  echo "#include <iostream> int main() { std::puts(\"Goodbye World\"); }" > main.cpp
+  184  g++ main.cpp
+  185  echo "#include <iostream>; int main() { std::puts(\"Goodbye World\"); }" > main.cpp
+  186  g++ main.cpp
+  187  g++ -c main.cpp
+  188  g++ -c main.cpp
+  189  g++ main.cpp
+  190  ls
+  191  g++ main.cpp
+  192  vim main.cpp
+  193  echo "#include <iostream>; int main() { std::puts(\"Goodbye World\"); }" > main.cpp
+  194  g++ main.cpp
+  195  echo "#include <iostream> int main() { std::puts(\"Goodbye World\"); }" > main.cpp
+  196  g++ main.cpp
+  197  echo "#include <iostream> int main() { std::puts(\"Goodbye World\"); }" > main.cpp
+  198  vim main.cpp
+  199  echo "#include <iostream> int main() { std::puts(\"Goodbye World\"); }" > main.cpp
+  200  vim main.cpp
+  201  echo "#include <iostream> int main() { std::puts(\"Goodbye World\"); }" > main.cpp
+  202  vim main.cpp
+  203  rm main.cpp 
+  204  rm -rf ".git"
+  205  vim main.cpp
+  206  git commit -am"Initial commit"
+  207  rm main.cpp 
+  208  git init
+  209  echo "#include <iostream> int main() { std::puts(\"Goodbye World\"); }" > main.cpp
+  210  vim main.cpp
+  211  git add *
+  212  git commit -am"Initial commit"
+  213  git commit -am"Farewell changed"
+  214  git remote add origin https://github.com/Rajzell/git-majonez.git
+  215  git push -u origin master
+  216  git checkout -b cs
+  217  git log
+  218  git branch
+  219  git branch -a
+  220  git reset HEAD~1
+  221  git branch -a
+  222  git log
+  223  git log
+  224  rm -rf ".git"
+  225  git init
+  226  echo "#include <iostream> int main() { std::puts(\"Goodbye World\"); }" > main.cpp
+  227  vim main.cpp
+  228  git add *
+  229  git commit -am"Initial commit"
+  230  git commit -am"Farewell changed"
+  231  git remote add origin https://github.com/Rajzell/git-majonez.git
+  232  git push -u origin master
+  233  git checkout -b cs
+  234  git log
+  235  git reset HEAD~1 --hard
+  236  git status
+  237  git log
+  238  git checkout cs
+  239  echo "#include <iostream> int main() { std::puts(\"Goodbye Coders School\"); }" > main.cpp
+  240  vim main.cpp 
+  241  git commit -am"Greetings"
+  242  git push origin cs
+  243  git checkout master
+  244  git log
+  245  git status
+  246  git merge origin/cs
+  247  git mergetool -t meld
+  248  history > history.txt
+  249  git commit -am"History added"
+  250  gitk
+  251  git reset HEAD~1 --hard
+  252  git log
+  253  git status
+  254  gitk
+  255  git checkout -b cs
+  256  rm -rf ".git"
+  257  rm main.cpp 
+  258  ls
+  259  cd ws
+  260  ls
+  261  cd git-majonez/
+  262  ls
+  263  ls -la
+  264  cd ..
+  265  rm git-majonez/
+  266  rm -f git-majonez/
+  267  rm -r git-majonez/
+  268  ls
+  269  mkdir git-majonze
+  270  rm -r git-majonze/
+  271  mkdir git-majonez
+  272  cd git-majonez/
+  273  git init
+  274  echo "#include <iostream> int main() { std::puts(\"Goodbye World\"); }" > main.cpp
+  275  git add *
+  276  git log
+  277  git status
+  278  git commit -am"Initial commit"
+  279  git status
+  280  git log
+  281  echo "#include <iostream> int main() { std::puts(\"Hello World\"); }" > main.cpp
+  282  git status
+  283  git add *
+  284  git status
+  285* 
+  286  git status
+  287  git log
+  288  git remote add origin https://github.com/Rajzell/git-majonez.git
+  289  git push -u origin master
+  290  git status
+  291* 
+  292  checkout -b cs
+  293  git checkout -b cs
+  294  git branches
+  295  git branch
+  296  gitk
+  297  git restart HEAD~1
+  298  git reset HEAD~1
+  299  git log
+  300  remove -rf *
+  301  cd ..
+  302  rm -rf git-majonez/
+  303  mkdir git-majonez
+  304  cd git majonez
+  305  cd git-majonez
+  306  git init
+  307  echo "#include <iostream> int main() { std::puts(\"Goodbye World\"); }" > main.cpp
+  308  git add *
+  309  git commit -am"Initial commit"
+  310  git status
+  311  git log
+  312  echo "#include <iostream> int main() { std::puts(\"Hello World\"); }" > main.cpp
+  313  git status
+  314  git add *
+  315  git commit -am"Farewell changed"
+  316  git remote add origin https://github.com/Rajzell/git-majonez.git
+  317  git push -u origin master
+  318  git status
+  319  git log
+  320  git checkout -b cs
+  321  git reset HEAD~1 --hard
+  322  log
+  323  git log
+  324  git status
+  325  git branch
+  326  checkout master
+  327  git checkout master
+  328  git branch
+  329  git log
+  330  git status
+  331  git checkout cs
+  332  git log
+  333  git status
+  334  gitk
+  335  git checkout master
+  336  gitk
+  337  git checkout cs
+  338  echo "#include <iostream> int main() { std::puts(\"Goodbye Coders School\"); }" > main.cpp
+  339  git commit -am"Greetings"
+  340  git status
+  341  git log
+  342  git push origin cs
+  343  git checkout master
+  344  git mergetool -t meld
+  345  git merge origin/cs
+  346  git mergetool -t meld
+  347  git commit -am "Merge branch 'cs'"
+  348  git status
+  349  git log
+  350  gitk
+  351  history > history.txt
+  352  git add history.txt 
+  353  git commit -am"History added"
+  354  git push origin master
+  355  git status
+  356  git log
+  357  gitk
+  358  git add main.cpp
+  359  git reset HEAD~1 --hard
+  360  git log
+  361  gitk
+  362  git reset HEAD~1 --hard
+  363  gitk
+  364  git branch
+  365  git checkout cs
+  366  git log
+  367  gitk
+  368  git checkout master
+  369  git log
+  370  gitk
+  371  git checkout master
+  372  git merge cs
+  373  git mergetool -t meld
+  374  git status
+  375  git log
+  376  git add main.cpp
+  377  git commit -am"Merge branch 'cs'"
+  378  git log
+  379  git status
+  380  gitk
+  381  history >history.txt
