@@ -1,1 +1,1 @@
-#include <iostream> int main() { std::puts("Goodbye World"); }
+#include <iostream> int main() { std::puts("Goodbye Coders School"); }
